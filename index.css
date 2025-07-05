@@ -110,7 +110,7 @@ body {
 }
 .phoneNav {
     color: white;
-    width: 50%; /* or 100% if you want it full-width */
+    width: 70%; /* or 100% if you want it full-width */
     height: 100vh; /* take full viewport height */
     position: fixed; /* better than absolute for full screen */
     z-index: 999;
@@ -127,7 +127,7 @@ body {
 
 }
 .phoneNavUl li{
-    margin: 10px;
+    margin: 20px;
 }
 .phoneNavUl li a{
     text-decoration: none;
