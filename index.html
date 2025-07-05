@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="phoneNav">
+             <ul class="phoneNavUl">
+                <li><a href="/test.html">Freelance 3D Projects</a></li>
+                <li><a href="/test.html">Sell 3D Models</a></li>
+                <li><a href="/test.html">Custom 3D Models</a></li>
+                <li><a href="/test.html">For Design</a></li>
+            </ul>
+        </div>
+  <!-- Mobile Hamburger -->
+  <div class="nav-left">
+    <button class="hamburger">&#9776;</button>
+  </div>
+
+  <!-- Center Logo -->
+  <div class="nav-center">
+    <img src="./assets/logo.png" alt="Logo" class="logo" />
+  </div>
+
+  <!-- Right Icons (Profile & Cart) -->
+  <div class="nav-right">
+    <button class="icon-btn"><i class="fas fa-user"></i></button>
+    <button class="icon-btn">
+      <i class="fas fa-shopping-cart"></i>
+    </button>
+  </div>
+  
+
+  <!-- Full Desktop Nav -->
+  <div class="nav-full">
+    <img src="./assets/logo.png" alt="Logo" class="logo" />
+    <form class="search" role="search" onsubmit="handleSearch(event)">
+      <input type="text" id="DesktopSearchInput" placeholder="Search..." />
+    </form>
+    <button class="share" type="button">Share your work</button>
+    <button class="login">Login</button>
+    <button class="cart">Cart <img src="./assets/cart.png" alt="cart" /></button>
+  </div>
+
+  <div class="phoneSearch">
+    <form class="search" role="search" onsubmit="handleSearch(event)">
+      <input type="text" id="PhoneSearchInput" placeholder="Search..." />
+    </form>
+  </div>
+
+</nav>
+
+    </nav>
+
+
+
+    <main class="main-body">
+
+
+        <div class="feature-container">
+            <div class="feature-parent">
+                <div class="feature-dropdown">
+                    <a class="feature-dropdown-button" href="/test.html">
+                        Freelance 3D Projects <span class="arrow">&#9662;</span> <!-- ▼ icon -->
+                    </a>
+                </div>
+                <div class="feature-dropdown" href="/test.html">
+                    <a class="feature-dropdown-button" href="/test.html">
+                        Sell 3D Models <span class="arrow">&#9662;</span> <!-- ▼ icon -->
+                    </a>
+                </div>
+                <div class="feature-dropdown">
+                    <a class="feature-dropdown-button" href="/test.html">
+                        Custom 3D Models <span class="arrow">&#9662;</span> <!-- ▼ icon -->
+                    </a>
+                </div>
+                <div class="feature-dropdown">
+                    <a class="feature-dropdown-button" href="/test.html" >
+                        For Design<span class="arrow">&#9662;</span> <!-- ▼ icon -->
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="image-container">
+            <h1>Search Throusands of 3D Models</h1>
+
+        </div>
+        <div class="category-card">
+            <div class="scroll-btn left">‹</div>
+
+            <div class="category-scroll" id="categoryScroll">
+                <div class="category-item">
+                    <img src="./assets/aircraft.png" alt="Aircraft" />
+                    <p>Aircraft</p>
+                </div>
+                <div class="category-item">
+                    <img src="./assets/car.png" alt="Car" />
+                    <p>Car</p>
+                </div>
+                <div class="category-item">
+                    <img src="./assets/aichtectural.png" alt="aichtectural" />
+                    <p>aichtectural</p>
+                </div>
+                <div class="category-item">
+                    <img src="./assets/Exterior.png" alt="Exterior" />
+                    <p>Exterior</p>
+                </div>
+                <div class="category-item">
+                    <img src="./assets/interior.png" alt="interior" />
+                    <p>Interior</p>
+                </div>
+                <div class="category-item">
+                    <img src="./assets/character.png" alt="character" />
+                    <p>Character</p>
+                </div>
+                <div class="category-item">
+                    <img src="./assets/food.png" alt="food" />
+                    <p>Food</p>
+                </div>
+                <div class="category-item">
+                    <img src="./assets/animal.png" alt="animal" />
+                    <p>Animal</p>
+                </div>
+                <div class="category-item">
+                    <img src="./assets/industrial.png" alt="industrial" />
+                    <p>Industrial</p>
+                </div>
+                <!-- Add more items... -->
+            </div>
+
+            <div class="scroll-btn right">›</div>
+        </div>
+
+
+
+        <div class="custom-model-container">
+            <div class="custom-model-left">
+                <h2>Looking For Custom<br>3D Modeling at Scale?</h2>
+                <button class="custom-model-btn">Get Started Here</button>
+            </div>
+
+            <div class="custom-model-center">
+                <img src="./assets/interiorRoom.png" alt="3D Model Room" />
+            </div>
+
+            <div class="custom-model-right">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco
+                </p>
+            </div>
+        </div>
+
+        <div class="marketplace-section">
+            <div class="marketplace-left">
+                <h3>3D Models</h3>
+                <ul>
+                    <li class="active" id="marketplaceButton">
+                        <span>Low-poly PBR 3D Models</span>
+                        <span class="arrow" id="marketArrow">›</span>
+
+                    </li>
+                    <p class="marketplaceText" id="marketplaceText">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Sed nostrum ipsam quasi hic sapiente esse dolore omnis pariatur rerum? Cupiditate?</p>
+                    <li>3D Printing Models</li>
+                </ul>
+            </div>
+
+            <div class="marketplace-center">
+                <h2>3D Model Marketplace</h2>
+                <p>
+                    Choose from 1,580,000 3D models for applications such as gaming,
+                    AR/VR, advertising, animation, movies and 3D printing.
+                </p>
+                <img src="./assets/squirrel.png" alt="Squirrel Playing Guitar" />
+            </div>
+
+            <div class="marketplace-right">
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </div>
+
+        <div class="freelance-section">
+            <div class="freelance-image">
+                <img src="./assets/aircraftImage.png" alt="3D Aircraft" />
+            </div>
+
+            <div class="freelance-content">
+                <h2>Sell your 3D Models and Find Freelance Projects</h2>
+
+                <div class="freelance-columns">
+                    <div class="freelance-column">
+                        <p><strong>Sell your 3D models and earn up to 80% royalties</strong></p>
+                        <a href="#">Sell 3D Models</a>
+                    </div>
+
+                    <div class="freelance-column">
+                        <p><strong>Outsource your skills & get up to 95% royalties</strong></p>
+                        <a href="#">Browse Jobs</a>
+                    </div>
+
+                    <div class="freelance-column">
+                        <p><strong>Work with enterprise clients</strong></p>
+                        <a href="#">Get Qualified</a>
+                    </div>
+
+                    <div class="freelance-column">
+                        <p><strong>Build your portfolio and be visible</strong></p>
+                        <a href="#">Browse Designers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="community-section">
+            <div class="community-content">
+                <h2>Join Squarebagal Community</h2>
+
+                <div class="community-columns">
+                    <div class="column">
+                        <h3>Galleries</h3>
+                        <p>Showcase your best renders, get feedback and recognition</p>
+                    </div>
+                    <div class="column">
+                        <h3>Tutorials</h3>
+                        <p>Learn new skills and teach others</p>
+                    </div>
+                    <div class="column">
+                        <h3>Forum</h3>
+                        <p>Find tutorials and discuss other 3D related matters</p>
+                    </div>
+                </div>
+
+                <button class="join-btn">Join The Community</button>
+            </div>
+
+            <div class="community-image">
+                <img src="./assets/communityGraphic.png" alt="Community Illustration">
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Newsletter Section -->
+            <div class="newsletter">
+                <p class="newsletter-subtitle">Stay up to date</p>
+                <h2 class="newsletter-title">get our <br>newsletter</h2>
+                <div class="newsletter-input">
+                    <input type="email" placeholder="Your email" />
+                    <button class="arrow-btn">→</button>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>Blog</li>
+                        <li>Events</li>
+                        <li>Press</li>
+                        <li>Careers</li>
+                        <li>Help Center</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Modelry</h4>
+                    <ul>
+                        <li>3D Viewer</li>
+                        <li>3D Product</li>
+                        <li>Visualization</li>
+                        <li>3D Digital Asset</li>
+                        <li>Management</li>
+                        <li>Custom 3D Modeling</li>
+                        <li>Virtual</li>
+                        <li>Photography</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Sell 3D Models</h4>
+                    <ul>
+                        <li>Community</li>
+                        <li>3D Designers</li>
+                        <li>Forum</li>
+                        <li>Freelance with us</li>
+                        <li>Loyalty credits</li>
+                        <li>Program</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Get in touch</h4>
+                    <p>hello@squarbagal.com<br>+91 8826688426</p>
+                    <h4>See what we're up to</h4>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="logo" />
+                <span>squarebagel</span>
+            </div>
+            <p>© Copyright squarebagel 2022</p>
+            <div class="policies">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
